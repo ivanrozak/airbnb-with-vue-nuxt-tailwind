@@ -4,16 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "brand":'#FF5A5F'
+        'brand': '#FF5A5F'
       }
-    },
+    }
   },
   variants: {
     extend: {
-
-    },
+      translate:['active']
+    }
   },
   plugins: [
-    require('@tailwindcss/forms'),
-  ],
+    require('@tailwindcss/forms')({
+      strategy: 'class'
+    })
+  ]
 }

@@ -1,0 +1,11 @@
+@layer components {
+  .btn {
+    @apply bg-brand p-2 rounded-xl shadow-lg transform active:-translate-y-1 transition;
+  }
+  .text-shadow {
+    text-shadow: 0 0 10px rgba(0,0,1,.75);
+  }
+  .h-60-vh {
+    height: 60vh;
+  }
+}
